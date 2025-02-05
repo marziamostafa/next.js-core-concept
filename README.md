@@ -34,3 +34,20 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+## initiate creating next.js app
+npx create-next-app@latest
+
+## npm run build
+production code will be generated and run
+
+## npm run start
+production environment code will be run
+
+## npm run dev
+to run the application
+
+
+--> page.js file is loaded as children of layout.js
+--> page.js is the main home page
