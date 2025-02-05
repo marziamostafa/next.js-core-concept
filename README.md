@@ -36,6 +36,13 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
 
+# next.js overview
+Next.js is a react framework that gives you buildig blocks to create web application.
+
+By framework, we mean NEXT.js handles the tooling and configuration needed for React.
+
+It provides additional structure, features and optimization for your application
+
 ## initiate creating next.js app
 npx create-next-app@latest
 
@@ -52,3 +59,18 @@ to run the application
 --> page.js file is loaded as children of layout.js
 --> page.js is the main home page
 --> check nextjs -->get started -->project structure
+
+## route
+--> to create a route a folder is needed under the app folder
+--> inside the folder file name must be page.js / page.jsx
+--> Component name can be anything
+--> after that route will be automatically created
+--> for every route foder name will be similar to route name but page.jsx will be there
+--> no capital letter will be there in route folder name, only lowercase
+--> the route can be accessed by : http://localhost:3000/routeName
+
+## route under route: nested route
+--> now if we want to create another route under about
+--> we need to create a folder named in lowercase with the exact same name under the service route
+--> inside the child route there will be again page.jsx file
+--> the route can be accessed by : http://localhost:3000/about/address
