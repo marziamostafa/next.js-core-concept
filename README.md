@@ -51,3 +51,4 @@ to run the application
 
 --> page.js file is loaded as children of layout.js
 --> page.js is the main home page
+--> check nextjs -->get started -->project structure
