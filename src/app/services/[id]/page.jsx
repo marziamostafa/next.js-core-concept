@@ -67,8 +67,8 @@ export default async function ServiceDetailPage({ params }) {
     ]
 
     const singleData = data.find((d)=>d._id==id)
-    console.log(singleData)
-    console.log(params)
+   // console.log(singleData)
+    
     return (
         <div>
             <h1>ServiceDetailPage</h1>
