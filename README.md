@@ -102,3 +102,15 @@ to run the application
 
 ![alt text](image-1.png)
 ![alt text](image.png)
+
+## dynamic route
+--> create a folder under a route with name like : [id]
+
+--> create a page.jsx file under it 
+
+--> we can get the id by params ({params})
+
+--> we can access the route by id  ; like params.id
+
+--> the route will look like this : http://localhost:3000/services/2
+
