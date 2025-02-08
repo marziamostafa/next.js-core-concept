@@ -37,11 +37,62 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 
 # next.js overview
-Next.js is a react framework that gives you buildig blocks to create web application.
+Next.js is a React framework that gives you buildig blocks to create web application.
 
 By framework, we mean NEXT.js handles the tooling and configuration needed for React.
 
 It provides additional structure, features and optimization for your application
+
+Providing some options:
+1. Built in optimization (image, font , icons are optimized and make performance better)
+2. Pre-rendering (SSG + SSR)
+3. Next level data fetching (React had client site data fetching but next.js has server site data fetching)
+4. Powerful routing and layouts (Next.js has its built in routing where react used third party)
+5. API routes (We had to use express and node.js and create a backend server but next.js has it built in)
+
+# Why Next.js?
+1. It's a fullstack framework
+2. blazingly fast because of pre-
+3. Contents are pre-generated
+4. so site is SEO friendly
+
+--> Framework: A framework can have multiple libraries. Framework already have third-party dependencies (Built in routing system, Api Routes, NextAuth for authetication)
+
+-->Library: If we use library we need to install third-party packages  (React-router-dom, firebase, backend server using express)
+
+## What is rendering?
+--> the process of turning HTML, CSS and JavaScript code into an interactive page  that website visitors exoect to see
+
+--> rendering is of two types: pre-rendering(Next.js) and client site rendering (React)
+
+--> Pre-rendering is of two types: SSG(Static site generation) and SSR( Server side rendering)
+
+## CSR(client site rendering)
+
+is a way of rendering web pages where most of the work is done in the browser (the client), not on the server.
+
+1.  The server sends a basic page and some instructions (JavaScript) to your browser.
+2.  The browser then takes those instructions, gets the full content (like text and images), and shows you the page.
+3.  After the page is loaded, if you click buttons or do things on the site, the browser can update the page without needing to reload it.
+
+
+## pre-rendering
+--> the HTML gets re-generated from the server at first  then becomes visiblle in our website.
+
+pre-rendering can be two types: SSG(Static site generation) and SSR( Server side rendering); bothe from  the server but SSG is in built in and SSR is in on user request
+
+## SSG(Static site generation)
+We see the contents that are already deployed in the vercel and it gets visible. no dynamic content is there
+
+This means that Next.js generates the pages of your website ahead of time when you build your site. These pages are ready to be shown to users immediately, making your website load super fast.
+
+Content gets generated in built time and content just become viusible when we hit on the deloyed url
+
+## SSR( Server side rendering)
+This means that when a user requests a page, the page is generated on the server at that moment, then sent to the user's browser. This is great for dynamic content that needs to be updated each time someone visits.
+
+Data is not geting ready in built time, based on user request it gets generated from the server and then becomes visible to the browser
+
 
 ## initiate creating next.js app
 npx create-next-app@latest
