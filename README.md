@@ -95,8 +95,13 @@ Data is not geting ready in built time, based on user request it gets generated 
 
 
 ## initiate creating next.js app
-npx create-next-app@latest
+npx create-next-app@latest "app_name"
 
+Why not using App Router?
+
+--> The component we will create on app router like react, they will be server component, that will be generated from the server. These server components does not support many component libraries (like CSS library)
+
+--> again we use "use client" at the top to define client site rendering
 ## npm run build
 production code will be generated and run
 
