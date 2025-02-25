@@ -219,6 +219,10 @@ To check more: in next.js page--> dynamic routres-->catch all segments
 ![alt text](image-8.png)
 
 
+## optional catch all segments
+
+The difference between catch-all and optional catch-all segments is that with optional, the route without the parameter is also matched
+![alt text](image-9.png)
 
 
 
