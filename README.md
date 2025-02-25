@@ -230,4 +230,9 @@ to over-write the default 404 page by the next.js we need to open a not-found.js
 
 for dynamic routes it won't show 404 with wrong id. so we need to validate the id
 
+## loading spinner
+create a page named loading.jsx inside app folder
+
+## important
+next.js bydefault stores the pages as cache. so we need to go to inspect-->network--> disable cache
 
