@@ -77,7 +77,7 @@ export default async function ServicePage() {
         {
 
           data.map(d=>(
-            <div>
+            <div className='flex'>
               <Link href={`/services/${d._id}`}>
               <p>{d.name}</p>
               <img src={d.image} className='h-20'></img>

@@ -170,3 +170,19 @@ to run the application
 
 --> the route will look like this : http://localhost:3000/services/2
 
+
+## group route
+we can organize if there are so many folders using the () under the app folder. we can mark a folder as a Route Group to prevent the folder from being included in the route's URL path.
+
+for example , under the (authPages) there  are login and  register folder. now we don't access it like 
+"/(authPages)/login"
+
+here we can access it like --> "/login" directlty (http://localhost:3000/login)
+
+## show  different layout for diffent route
+inside the group route (dashboard) we will create another layout.jsx file.
+
+and we must the the {children} as parameter on that layout function
+
+
+

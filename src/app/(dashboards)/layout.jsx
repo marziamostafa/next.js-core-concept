@@ -4,7 +4,14 @@ export default function DashboardLayout({ children }) {
     return (
         <div>
             <div className='grid grid-cols-12'>
-                <div className='col-span-3'></div>
+                {/* ---------------side navbar------------------- */}
+                <div className='col-span-3'>
+                    <ul>
+                        <li>user list</li>
+                    </ul>
+                </div>
+
+                {/* -------------dashboard content------------- */}
                 <div className='col-span-9'>{children}</div>
             </div>
 

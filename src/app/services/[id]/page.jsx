@@ -70,7 +70,7 @@ export default async function ServiceDetailPage({ params }) {
    // console.log(singleData)
     
     return (
-        <div>
+        <div className='flex'>
             <h1>ServiceDetailPage</h1>
             <p>Id : {id} </p>
             <p>{singleData.name}</p>
