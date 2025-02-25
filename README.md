@@ -224,5 +224,10 @@ To check more: in next.js page--> dynamic routres-->catch all segments
 The difference between catch-all and optional catch-all segments is that with optional, the route without the parameter is also matched
 ![alt text](image-9.png)
 
+## over-write the next.js default 404 page:
+
+to over-write the default 404 page by the next.js we need to open a not-found.jsx file inside the app folder
+
+for dynamic routes it won't show 404 with wrong id. so we need to validate the id
 
 

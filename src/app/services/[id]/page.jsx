@@ -69,13 +69,21 @@ export default async function ServiceDetailPage({ params }) {
     const singleData = data.find((d)=>d._id==id)
    // console.log(singleData)
     
+   if (singleData){
     return (
-        <div className='flex'>
-            <h1>ServiceDetailPage</h1>
-            <p>Id : {id} </p>
-            <p>{singleData.name}</p>
-            <img src={singleData.image} />
+      <div className='flex'>
+          <h1>ServiceDetailPage</h1>
+          <p>Id : {id} </p>
+          <p>{singleData.name}</p>
+          <img src={singleData.image} />
 
-        </div>
-    )
+      </div>
+  )
+   }
+   else{
+    return <>
+    Not Found
+    </>
+   }
+   
 }
