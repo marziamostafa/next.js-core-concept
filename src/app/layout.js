@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased h-screen`} 
       >
         <Navbar/>
-        <main className="h-screen max-h-[800px] place-content-center place-items-center">
+        <main className="h-screen max-h-[800px]">
           {children}
         </main>
 

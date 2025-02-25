@@ -184,5 +184,21 @@ inside the group route (dashboard) we will create another layout.jsx file.
 
 and we must the the {children} as parameter on that layout function
 
+![alt text](image-2.png)
+
+
+## get the path of the current route
+need a hook for that usePathname() from 'next/navigation
+
+const pathName = usePathname()
+
+console.log(pathName,pathName.includes("dashboard"))
+
+![alt text](image-3.png)
+
+
+
+
+
 
 
