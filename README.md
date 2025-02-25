@@ -186,6 +186,8 @@ and we must the the {children} as parameter on that layout function
 
 ![alt text](image-2.png)
 
+for individual layout we can even add layout.jsx inside the individual folder. like inside the user-dashboard folder we can create another layout.jsx.
+
 
 ## get the path of the current route
 need a hook for that usePathname() from 'next/navigation
@@ -197,6 +199,24 @@ console.log(pathName,pathName.includes("dashboard"))
 ![alt text](image-3.png)
 
 
+## home/dynamic/dynamic/dynamic routes : catch all segments
+[...id]  /   [...slugs]
+
+here we want to catch all the routes dynamically
+
+we must open page.jsx and add {params}
+
+To check more: in next.js page--> dynamic routres-->catch all segments
+
+![alt text](image-4.png)
+
+![alt text](image-5.png)
+
+![alt text](image-6.png)
+
+![alt text](image-7.png)
+
+![alt text](image-8.png)
 
 
 
