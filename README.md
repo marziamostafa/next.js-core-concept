@@ -236,3 +236,66 @@ create a page named loading.jsx inside app folder
 ## important
 next.js bydefault stores the pages as cache. so we need to go to inspect-->network--> disable cache
 
+## middleware
+a function that works in request and response cycle. it checks if the request is valid or not. if valid it forwars to the server end
+
+Middleware allows you to run code before a request is completed.
+
+Then, based on the incoming request, you can modify the response by rewriting, redirecting, modifying the request or response headers, or responding directly.
+
+
+we used it in mern where we fetched data from mongoDB. 
+
+
+--> in next.js if we visit a server, when we hit the API from the nextJS client,a token comes with th e request. there is a middleware that checks if the request is valid or not. if the request is valid then its forwarded to the nextJS server.
+
+--> it does not always happens that we  only make server  using nextJS . sometimes there can be external server made with expressJS. so if client sends requests to the ExpressJs server thast time the nextJS middleware won't work. 
+
+--> we have to create middleware.js file in the app or src folder in the same level as pages. here we created under the src folder.
+
+
+![alt text](image-10.png)
+
+when we are requesting 'middleware(request)' for the about page. the request is read by (request) parameter. 
+
+after getting the request  as next response its  redirecting to the "/" page
+
+--> redirect
+![alt text](image-11.png)
+
+
+--> applying conmdition in the middleware and it hit the pathname. we can see in console with GET
+![alt text](image-12.png)
+
+![alt text](image-13.png)
+
+![alt text](image-14.png)
+
+-->rewrite: does not change the url. but loads and presents the component
+
+![alt text](image-16.png)
+
+![alt text](image-15.png)
+
+here as user is not admin , while requesting for the services page, url is same but the login content is there.
+after user logged in, the he can access to the service page
+
+## matcher in middleware:
+matcher only matches one dynamic path if --> /about/:path
+
+to match more -->  /about/:path*
+
+![alt text](image-17.png)
+
+
+## middleware : cookies
+
+![alt text](image-18.png)
+
+we have created the cookies , now we will try to access it
+
+![alt text](image-19.png)
+
+![alt text](image-20.png)
+
+after the login, if we get the token we can take decision based on it
