@@ -96,9 +96,15 @@ Disadvantage of client side rendering is : after executing the js then HTML and 
 ## pre-rendering
 --> the HTML gets re-generated from the server at first  then becomes visiblle in our website.
 
+The JS get executed at the server end. the HTML and CSS that are created at the server end they are direcctly sent to the browser. 
+
+Benefit is : As js is getting executed at the server end and sending html and css as response , so different search engine ca access the html and css, they can read the content. And in search result our website comes at the beginninng. So pre-rendering increases the SEO friendliness. 
+
 pre-rendering can be two types: SSG(Static site generation) and SSR( Server side rendering); bothe from  the server but SSG is in built in and SSR is in on user request
 
 ## SSG(Static site generation)
+This rendering happens at the build time, when we build the website before deploying ("npm run build"). 
+
 We see the contents that are already deployed in the vercel and it gets visible. no dynamic content is there
 
 This means that Next.js generates the pages of your website ahead of time when you build your site. These pages are ready to be shown to users immediately, making your website load super fast.
@@ -106,9 +112,13 @@ This means that Next.js generates the pages of your website ahead of time when y
 Content gets generated in built time and content just become viusible when we hit on the deloyed url
 
 ## SSR( Server side rendering)
+The rendering happens after the user requests for the web page. 
+
 This means that when a user requests a page, the page is generated on the server at that moment, then sent to the user's browser. This is great for dynamic content that needs to be updated each time someone visits.
 
 Data is not geting ready in built time, based on user request it gets generated from the server and then becomes visible to the browser
+
+when a user requests for a web page , then at the server side the js code will be executed. while executing it will fetch all the needed data from the database. with the fetched data html and css will be created. those html and css will be given to the user as the response. so user will get direct html and css content insted of js. 
 
 
 ## initiate creating next.js app
