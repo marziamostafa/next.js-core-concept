@@ -60,6 +60,17 @@ Providing some options:
 
 -->Library: If we use library we need to install third-party packages  (React-router-dom, firebase, backend server using express)
 
+## rendering Concept
+
+Process of transforming code into visual and interactive web pages that users see and interact with on their browsers. 
+
+Input : HTML, CSS, javaScript code
+
+Process : The browser's rendering engine inteprets this code
+
+Output : An intersctive web page
+
+
 ## What is rendering?
 --> the process of turning HTML, CSS and JavaScript code into an interactive page  that website visitors exoect to see
 
@@ -71,10 +82,16 @@ Providing some options:
 
 is a way of rendering web pages where most of the work is done in the browser (the client), not on the server.
 
+before deploying the code we do "npm run build". after thid command a dist folder is created. in the dist folder there is a html code and the RecatJs code we have written gets translated into js code. 
+
+when we request the website that is deployed in vercel or netlify from the browser, the codes comes from the hosting server to the browser. After coming to the browser the js code gets executed. while executing the js code it fetches the data from the backend that created with express. After some prcessing html and css files are created and a browser can show it as a website. That means js executing parts happens at the client side. 
+
 1.  The server sends a basic page and some instructions (JavaScript) to your browser.
 2.  The browser then takes those instructions, gets the full content (like text and images), and shows you the page.
 3.  After the page is loaded, if you click buttons or do things on the site, the browser can update the page without needing to reload it.
 
+
+Disadvantage of client side rendering is : after executing the js then HTML and CSS gets created. To execite the js code, it needs help of browser's v8 engine. SEO doesn't wait to execute those code. To execcute we need V8 engine or nodeJS. Search engine expects direct html and css. So client side rendering is not SEO friendly. 
 
 ## pre-rendering
 --> the HTML gets re-generated from the server at first  then becomes visiblle in our website.
@@ -299,3 +316,5 @@ we have created the cookies , now we will try to access it
 ![alt text](image-20.png)
 
 after the login, if we get the token we can take decision based on it
+
+
