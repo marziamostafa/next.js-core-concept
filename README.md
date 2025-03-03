@@ -111,6 +111,9 @@ This means that Next.js generates the pages of your website ahead of time when y
 
 Content gets generated in built time and content just become viusible when we hit on the deloyed url
 
+HTML and CSS are already created in the development phase and depployed in the server side. so if the user requests now , as the html and css are already cretaed , they will be sent as a response 
+As js execution work is already done in the build phase , so we can get the fast response in this rendering. User end takes less processing so pages gets loaded faster.
+
 ## SSR( Server side rendering)
 The rendering happens after the user requests for the web page. 
 
@@ -118,7 +121,7 @@ This means that when a user requests a page, the page is generated on the server
 
 Data is not geting ready in built time, based on user request it gets generated from the server and then becomes visible to the browser
 
-when a user requests for a web page , then at the server side the js code will be executed. while executing it will fetch all the needed data from the database. with the fetched data html and css will be created. those html and css will be given to the user as the response. so user will get direct html and css content insted of js. 
+when a user requests for a web page , then at the server side the js code will be executed. while executing it will fetch all the needed data from the database. with the fetched data html and css will be created. those html and css will be given to the user as the response. so user will get direct html and css content instead of js. 
 
 
 ## initiate creating next.js app
