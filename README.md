@@ -331,3 +331,22 @@ we have created the cookies , now we will try to access it
 after the login, if we get the token we can take decision based on it
 
 
+
+
+## data fetching with SSR
+we will create a separate function under posts-->page.jsx. 
+
+previously we used useEffect now we are using a async function and the data is found cz nextJS out of the box creates server component .
+
+as we haven't indicated anything like "use client" so it's automatocally a server component
+
+take the posts link from the json placeholder
+
+![alt text](image-21.png)
+
+go to inspect--> network--> click one under name--> response
+
+![alt text](image-22.png)
+
+
+Here we can see an HTML file got loaded directly in the browser. response is comming as html directly by server side rendering. 

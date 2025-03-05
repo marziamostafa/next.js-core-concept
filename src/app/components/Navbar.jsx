@@ -3,10 +3,10 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import React from 'react'
 
-export default function() {
+export default function () {
     const pathName = usePathname()
-    console.log(pathName,pathName.includes("dashboard"))
-    if(!pathName.includes("dashboard")){
+    console.log(pathName, pathName.includes("dashboard"))
+    if (!pathName.includes("dashboard")) {
         return (
             <div>
                 <nav className='flex justify-center'>
@@ -17,18 +17,21 @@ export default function() {
                         <Link href="/services">
                             <li>Services</li>
                         </Link>
+                        <Link href="/posts">
+                            <li>Posts</li>
+                        </Link>
                         <Link href="/about">
                             <li>About</li>
                         </Link>
-    
+
                     </ul>
                 </nav>
-    
+
             </div>
         )
     }
-    else{
+    else {
         return <></>
     }
-   
+
 }
