@@ -123,6 +123,7 @@ Data is not geting ready in built time, based on user request it gets generated 
 
 when a user requests for a web page , then at the server side the js code will be executed. while executing it will fetch all the needed data from the database. with the fetched data html and css will be created. those html and css will be given to the user as the response. so user will get direct html and css content instead of js. 
 
+-----------NextJS supports server side rendering.--------------
 
 ## initiate creating next.js app
 npx create-next-app@latest "app_name"
