@@ -351,3 +351,18 @@ go to inspect--> network--> click one under name--> response
 
 
 Here we can see an HTML file got loaded directly in the browser. response is comming as html directly by server side rendering. 
+
+## Dynamic Data fetching
+---->open dynamic route under post
+
+![alt text](image-23.png)
+
+----> inside the [id]'s page add params
+
+![alt text](image-24.png)
+
+--> Like previous data fetch with SSR we have to create a async function and fetch the data like previous 
+
+--> but this time data fetch will be with id
+
+![alt text](image-25.png)
