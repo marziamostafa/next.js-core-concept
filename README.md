@@ -366,3 +366,21 @@ Here we can see an HTML file got loaded directly in the browser. response is com
 --> but this time data fetch will be with id
 
 ![alt text](image-25.png)
+
+
+## client side rendering
+
+## when to use server and client component?
+server component -->
+
+1. Fetch data
+2. access backend resource directly
+3. keep sensitive informatin (access token, api keys)
+4. keep large dependencies in server
+
+
+client component -->
+1. interactivity and event listener (onClick(), onChnage())
+2. UseState and lifeCycle Events (useState(), useEffect(), useReducer())
+3. use Web browser API'S only
+4. use custom hooks
