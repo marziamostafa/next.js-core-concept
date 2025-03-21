@@ -450,3 +450,38 @@ its a flexible and developer friendly one
 
 
 ![alt text](image-33.png)
+
+
+# features that only nextJS has
+
+## metadata
+
+1. what is metadata?
+
+--> when we visit any website, that website is basically an html document. that html document has main two parts: <head> and <body>
+
+![alt text](image-36.png)
+
+--> the contents we see in the website are loaded in the body
+
+--> but the info about the website, what's the website about? what's it's ,main topics are those are containedmby the <head> tag
+
+
+--> indside the <head> tag we can see some <meta> tag
+
+![alt text](image-37.png)
+
+
+## 2. how can we set Metadata?
+
+--> By default there are some metadata alreday given in the layout.js
+
+![alt text](image-38.png)
+
+--> if we want to create metadata for individual pages we have to create the same varialble like the layout.js
+
+--> suppose we are creating metadata for the post page
+
+![alt text](image-39.png)
+
+

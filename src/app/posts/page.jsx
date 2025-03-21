@@ -8,8 +8,14 @@ export const getPosts = async () => {
     const data = await res.json()
     return data
 }
-
 // here  data is got fetched.
+
+
+
+export const metadata = {
+    title: "All Posts | Learning NextJS",
+    description: "Loading JSON placeholder posts using server component",
+};
 
 export default async function Posts() {
     const posts = await getPosts()  // after fetching data is getting loaded here and html is created
