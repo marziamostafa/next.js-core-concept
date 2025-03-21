@@ -1,15 +1,15 @@
-"use client";
-import React, { use, useEffect, useState } from 'react'
+import MealSearchInput from "./components/MealSearchInput"
 
-export default function MealsPage() {
-    const [meals, setMeals] = useState([])
-    const [search, setSearch] = useState('')
+
+
+export default async function MealsPage({ searchParams }) {
+    const query = await searchParams
 
     const fetchMeals = async () => {
         try {
-            const res = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${search}`)
+            const res = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${query.search}`)
             const data = await res.json()
-            setMeals(data?.meals || [])
+            //setMeals(data?.meals || [])
             return data.meals
 
         }
@@ -19,17 +19,13 @@ export default function MealsPage() {
         }
     }
 
-    useEffect(() => {
-        fetchMeals()
-    }, [search])
+    const meals = await fetchMeals()
     return (
         <div >
-            <div className='flex justify-center'>
-                <input className='border-2 mb-2' type="text" value={search} onChange={(e) => setSearch(e.target.value)} />
-            </div>
+            <MealSearchInput />
             <div className='grid grid-cols-3 gap-4'>
                 {
-                    meals.map((meal) => {
+                    meals?.map((meal) => {
                         return (
                             <div key={meal.idMeal} className='border-2 border-slate-600 p-4 mb-2'>
                                 <h1 className='text-2xl font-bold'>{meal.strMeal}</h1>

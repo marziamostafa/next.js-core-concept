@@ -384,3 +384,14 @@ client component -->
 2. UseState and lifeCycle Events (useState(), useEffect(), useReducer())
 3. use Web browser API'S only
 4. use custom hooks
+
+
+![alt text](image-26.png)
+here we are creating a component is to get the value from the input field. and using that value create a searchParams 
+
+searchParam is the question and search value in the url
+![alt text](image-27.png)
+
+
+after searchParams , its routing us to that page
+
