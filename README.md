@@ -386,12 +386,67 @@ client component -->
 4. use custom hooks
 
 
-![alt text](image-26.png)
+![alt text](image-34.png)
 here we are creating a component is to get the value from the input field. and using that value create a searchParams 
 
 searchParam is the question and search value in the url
-![alt text](image-27.png)
+![alt text](image-35.png)
 
 
 after searchParams , its routing us to that page
 
+
+
+## styling with nextJS
+sometimes we need to write raw css to customize package or library component. 
+
+the golbals.css with the app is globally applicable. 
+
+--> the globals.css file must be imported in layout.js
+
+--> if we import this css file in any component those class will be  globally available. it can be used in any component.
+
+![alt text](image-26.png)
+
+--> if we use it in page.jsx of [id]
+
+![alt text](image-27.png)
+
+![alt text](image-28.png)
+
+
+## styling for only one component
+
+if we want to create a css class that will only be for one specific component
+
+--> like for the page.jsx of post. file name must be with .module.css extension
+
+![alt text](image-29.png)
+
+--> now import the css file
+
+![alt text](image-30.png)
+
+
+--> the add it dynamically
+
+![alt text](image-31.png)
+
+
+--> to make the class unique there is a unique identifier added before it
+
+![alt text](image-32.png)
+
+--> if we want to use this class in another component we need to import it. it's not globally available like globals.css
+
+--> it's only component specific
+
+
+## ui library
+
+we can also use some ui library. shadcn/ui is a popular one now . https://ui.shadcn.com/
+
+its a flexible and developer friendly one
+
+
+![alt text](image-33.png)

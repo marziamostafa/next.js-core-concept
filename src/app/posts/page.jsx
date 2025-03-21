@@ -1,4 +1,7 @@
 import Link from 'next/link'
+
+import style from "./post.module.css"
+
 import React from 'react'
 export const getPosts = async () => {
     const res = await fetch("https://jsonplaceholder.typicode.com/posts")
@@ -17,8 +20,8 @@ export default async function Posts() {
                 posts.map((p) => {
                     return (
                         <div key={p.id} className='border-2 border-slate-800 p-4'>
-                            <p className='text-2xl font-bold'>{p.title}</p>
-                            <p>{p.body}</p>
+                            <p className={`text-2xl font-bold ${style["post-title"]}`}>{p.title}</p>
+                            <p className='testing-purpose-css-class'>{p.body}</p>
                             <Link href={`/posts/${p.id}`}><button className='border bg-slate-500 rounded p-2'>Details</button></Link>
                         </div>
                     )
