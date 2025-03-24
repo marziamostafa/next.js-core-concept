@@ -164,7 +164,7 @@ to run the application
 
 --> the route can be accessed by : http://localhost:3000/routeName
 
-## route under route: nested route
+## route under route: nested route : about-->address-->
 --> now if we want to create another route under about
 
 --> we need to create a folder named in lowercase with the exact same name under the service route
@@ -190,7 +190,7 @@ to run the application
 ![alt text](image-1.png)
 ![alt text](image.png)
 
-## dynamic route
+## dynamic route : [id]
 --> create a folder under a route with name like : [id]
 
 --> create a page.jsx file under it 
@@ -208,9 +208,9 @@ we can organize if there are so many folders using the () under the app folder. 
 for example , under the (authPages) there  are login and  register folder. now we don't access it like 
 "/(authPages)/login"
 
-here we can access it like --> "/login" directlty (http://localhost:3000/login)
+here we can access it like --> "/login" directly (http://localhost:3000/login)
 
-## show  different layout for diffent route
+## show  different layout for different route
 inside the group route (dashboard) we will create another layout.jsx file.
 
 and we must the the {children} as parameter on that layout function
@@ -467,21 +467,42 @@ its a flexible and developer friendly one
 --> but the info about the website, what's the website about? what's it's ,main topics are those are containedmby the <head> tag
 
 
---> indside the <head> tag we can see some <meta> tag
+--> inside the <head> tag we can see some <meta> tag
 
 ![alt text](image-37.png)
 
 
 ## 2. how can we set Metadata?
 
---> By default there are some metadata alreday given in the layout.js
+--> By default there are some metadata already given in the layout.js
 
 ![alt text](image-38.png)
 
---> if we want to create metadata for individual pages we have to create the same varialble like the layout.js
+--> if we want to create metadata for individual pages we have to create the same variable like the layout.js
 
 --> suppose we are creating metadata for the post page
 
 ![alt text](image-39.png)
+
+## Dynamic Metadata title:
+
+--> we will make it dynamic in layout.js under app. layout is the top most component that will be inherited by all the children.
+
+![alt text](image-40.png)
+
+--> %s is a placeholder. in future something will be written here. mainly dynamic titles will come here
+
+![alt text](image-41.png)
+
+![alt text](image-42.png)
+
+--> now even though we have only given the individual title, dynamic one will take it.
+
+
+## dynamic metadata title for dynamic route ([id]):
+there must be a function named generateMetadata()
+
+![alt text](image-43.png)
+
 
 

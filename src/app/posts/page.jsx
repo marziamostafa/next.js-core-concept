@@ -8,12 +8,12 @@ export const getPosts = async () => {
     const data = await res.json()
     return data
 }
-// here  data is got fetched.
+// here  data is got fetched.S
 
 
 
 export const metadata = {
-    title: "All Posts | Learning NextJS",
+    title: "All Posts ",
     description: "Loading JSON placeholder posts using server component",
 };
 

@@ -13,7 +13,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Learning NextJS",
+  title: {
+    default: "Learning NextJS",
+    template: "%s | Learning NextJS",
+  },
   description: "Learning NextJS core concepts",
 };
 
@@ -24,11 +27,11 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased h-screen`}
       >
         <Navbar />
-        <main className="h-screen max-h-[800px]">
-          {children}
-        </main>
+        <main className="h-screen max-h-[800px]">{children}</main>
 
-        <footer className="text-center bg-slate-300">Awesome NextJS project</footer>
+        <footer className="text-center bg-slate-300">
+          Awesome NextJS project
+        </footer>
       </body>
     </html>
   );
