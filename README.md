@@ -527,4 +527,6 @@ we can also see body of the content as the description as metadata inside the <m
 
 ![alt text](image-48.png)
 
+if we change the order of the keyword it also changes the order in search engine
+
 2. we can also set the authors information, creators and publisher information

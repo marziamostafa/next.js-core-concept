@@ -1,10 +1,11 @@
+import Link from "next/link";
 import MealSearchInput from "./components/MealSearchInput"
 
 
 
 export const metadata = {
     title: "All Meals ",
-    description: "Loading mealbd data to learn dynamic data fetching with client component",
+    description: "Loading MealDB data to learn dynamic data fetching with client component",
 };
 
 export default async function MealsPage({ searchParams }) {
@@ -36,7 +37,11 @@ export default async function MealsPage({ searchParams }) {
                                 <h1 className='text-2xl font-bold'>{meal.strMeal}</h1>
                                 <img src={meal.strMealThumb} alt={meal.strMeal} />
                                 <p>{meal.strInstructions}</p>
+                                <Link rel="stylesheet" href={`meals/${meal.idMeal}`}>
+                details
+              </Link>
                             </div>
+
                         )
                     })
                 }
