@@ -17,6 +17,7 @@ export const metadata = {
     default: "Learning NextJS",
     template: "%s | Learning NextJS",
   },
+  keywords: ["Next.js", "React", "JavaScript", "learning", "playground"],
   description: "Learning NextJS core concepts",
 };
 

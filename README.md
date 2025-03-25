@@ -504,5 +504,27 @@ there must be a function named generateMetadata()
 
 ![alt text](image-43.png)
 
+we have to fetch the data at first 
+
+![alt text](image-44.png)
+
+here, getSinglePost() is the function we used to fetch the data before
+
+![alt text](image-45.png)
+
+here we got the dynamic title along with the layout default part.
+
+![alt text](image-46.png)
+
+we can also see body of the content as the description as metadata inside the <meta> tag
 
 
+## the things we can set as metadata
+
+![alt text](image-47.png)
+
+1. keywords: ['Next.js', 'React', 'JavaScript'],  --> here keywords is: if any user search in the search engine with those keywords this website will get the priority in the search engine. so we can set 
+
+![alt text](image-48.png)
+
+2. we can also set the authors information, creators and publisher information
