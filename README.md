@@ -541,13 +541,44 @@ we can get the optimized image by using <Image> tag
 
 ![alt text](image-53.png)
 
----> whereas the <img> tag loaded all the imaage at once
+---> whereas the <img> tag loaded all the image at once
+
 ![alt text](image-54.png)
 
---> the size of the image with <Image> tag is much less thana comapring with the <img> tag
+--> the size of the image with <Image> tag is much less than comapring with the <img> tag
 
 
 --> here we are getting the optimized image and on scroll we are getting the lazy load
+
+
+## font optimization:
+if we check the layout.js file we can see there is already an default example given by nextJs
+
+![alt text](image-55.png)
+
+-->this font is imported from "next/font/google"
+
+-->that means google fonts are already in the nextJS packages. we can just simply inport them and use them.
+
+--> if we want to use another font here
+
+1. we should import it at first
+
+![alt text](image-57.png)
+
+2. then we have to decalre a variable
+
+![alt text](image-58.png)
+
+3. there is a suggestion what we need to give in the array object
+
+![alt text](image-56.png)
+
+4. then we have to add it in the classname of the body
+
+![alt text](image-59.png)
+
+
 
 
 
