@@ -579,7 +579,21 @@ if we check the layout.js file we can see there is already an default example gi
 ![alt text](image-59.png)
 
 
+## font optimization for a specific individual page:
 
+1.we will go to the page.jsx file of that specific page/route
+
+2. we have to import the font there
+
+![alt text](image-60.png)
+
+3. create the variable of the array of object
+
+![alt text](image-61.png)
+
+4. to apply it only on the cards we add in inside the classname
+
+![alt text](image-62.png)
 
 
 # handling error:
