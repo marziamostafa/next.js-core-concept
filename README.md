@@ -536,6 +536,20 @@ if we change the order of the keyword it also changes the order in search engine
 we can get the optimized image by using <Image> tag
 
 
+--> under the network tab in the img tab we can see the record of the image that got loaded with our scroll . 
+--> the format of the image is webp
+
+![alt text](image-53.png)
+
+---> whereas the <img> tag loaded all the imaage at once
+![alt text](image-54.png)
+
+--> the size of the image with <Image> tag is much less thana comapring with the <img> tag
+
+
+--> here we are getting the optimized image and on scroll we are getting the lazy load
+
+
 
 # handling error:
 ## next/imge:
@@ -554,5 +568,9 @@ in our next.config.mjs we can see there is an empty object
 ![alt text](image-51.png)
 
 we will update the obaject according to the nextJS documentation and update the hostname with the given one in the error. we will remove the other properties of the  object that we don't need right now.
+
+![alt text](image-52.png)
+
+the problem is solved in that way
 
 
