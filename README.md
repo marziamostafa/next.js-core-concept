@@ -530,3 +530,29 @@ we can also see body of the content as the description as metadata inside the <m
 if we change the order of the keyword it also changes the order in search engine
 
 2. we can also set the authors information, creators and publisher information
+
+
+## Image optimization
+we can get the optimized image by using <Image> tag
+
+
+
+# handling error:
+## next/imge:
+
+--> in our configuration we haven't included the hostname
+
+![alt text](image-49.png)
+
+
+solution given by nextJS:
+
+![alt text](image-50.png)
+
+in our next.config.mjs we can see there is an empty object
+
+![alt text](image-51.png)
+
+we will update the obaject according to the nextJS documentation and update the hostname with the given one in the error. we will remove the other properties of the  object that we don't need right now.
+
+

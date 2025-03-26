@@ -1,5 +1,6 @@
 import Link from "next/link";
 import MealSearchInput from "./components/MealSearchInput"
+import Image from "next/image";
 
 
 
@@ -35,11 +36,12 @@ export default async function MealsPage({ searchParams }) {
                         return (
                             <div key={meal.idMeal} className='border-2 border-slate-600 p-4 mb-2'>
                                 <h1 className='text-2xl font-bold'>{meal.strMeal}</h1>
-                                <img src={meal.strMealThumb} alt={meal.strMeal} />
+                                <Image src={meal.strMealThumb} width={600} height={600} alt={meal.strMeal} />
                                 <p>{meal.strInstructions}</p>
                                 <Link rel="stylesheet" href={`meals/${meal.idMeal}`}>
-                details
-              </Link>
+                                    details
+                                </Link>
+
                             </div>
 
                         )
