@@ -649,6 +649,78 @@ and got the output like
 
 ![alt text](image-71.png)
 
+## dynamic route:
+
+![alt text](image-72.png)
+
+
+--> as we want to get data with specific id so we need a req object, and we can find the id with params
+
+--> we have to await the params at first
+
+--> here we are trying to send the id
+
+![alt text](image-73.png)
+
+
+![alt text](image-74.png)
+
+--> DETELE route
+
+![alt text](image-75.png)
+
+![alt text](image-76.png)
+
+--> PATCH route
+
+![alt text](image-77.png)
+
+![alt text](image-78.png)
+
+here we can say that our route making is done as we got the ressponse
+
+
+## connect with the database
+
+to connect with the database we need the mongo uri
+
+1. create a lib folder under the src folder
+
+2. inside the lib(library) folder we will create the file ,dbConnect.js to connect database
+
+![alt text](image-79.png)
+
+3. GET: now we can get the data by collection name
+
+![alt text](image-80.png)
+
+![alt text](image-81.png)
+
+4. POST: 
+
+![alt text](image-82.png)
+
+![alt text](image-83.png)
+
+5. GET by id: 
+
+![alt text](image-84.png)
+
+params must be destructured like {params}
+
+![alt text](image-85.png)
+
+6. PATCH by id:
+
+![alt text](image-86.png)
+
+![alt text](image-87.png)
+
+7. DELETE by id:
+
+![alt text](image-88.png)
+
+![alt text](image-89.png)
 
 
 

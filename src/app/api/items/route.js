@@ -1,12 +1,9 @@
-import { error } from "console"
+import dbConnect from "../../../lib/dbConnect";
+
 
 export async function GET() {
-    const data = {
-        message: "successfully get data",
-        error: false,
-        status: 200
-    }
-
+    const data = await dbConnect("allmedia").find({}).toArray();
+    console.log(data)
 
     return Response.json({ data })
 }
@@ -16,7 +13,7 @@ export async function POST(req) {
 
     console.log(req)
     const postedData = await req.json();
+    const result = await dbConnect("allmedia").insertOne(postedData);
 
-
-    return Response.json({ postedData })
+    return Response.json(result)
 }
