@@ -738,6 +738,19 @@ here we have updated the data in the datsabase but the data is not showing, beca
 benefit is : in the server end the network request is less
 
 
+## revalidating:
+if we want to revalidate tne cache we have to mention it in the api after the insertOne command
+
+that means we are giving command to erase the old saved data and fetch the data newly fom the GET route
+
+![alt text](image-92.png)
+
+that means, when we do the GET route to fetch the data its getting from the cache. but when we adding a new data by POST route it's fetching the data newly from the server
+
+
+
+
+
 
 # an error accured due to middleware file while checking api in postman
 ## middleware section as backup:

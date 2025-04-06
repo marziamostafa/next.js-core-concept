@@ -1,3 +1,4 @@
+import { revalidatePath } from "next/cache";
 import dbConnect from "../../../lib/dbConnect";
 
 
@@ -13,7 +14,8 @@ export async function POST(req) {
 
     console.log(req)
     const postedData = await req.json();
-    const result = await dbConnect("allmedia").insertOne(postedData);
+    const result = await dbConnect("allmedia").insertOne(postedData)
+    revalidatePath("/products")
 
     return Response.json(result)
 }
