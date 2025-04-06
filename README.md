@@ -723,7 +723,19 @@ params must be destructured like {params}
 ![alt text](image-89.png)
 
 
+## caching
 
+when the data is alreaady fetched, again fetching the data by network request is not convenient
+
+if we want to force the catching , means already fetched data won't be fetched again, it will be showed from the catching storage
+
+![alt text](image-90.png)
+
+![alt text](image-91.png)
+
+here we have updated the data in the datsabase but the data is not showing, because we forefully cached it
+
+benefit is : in the server end the network request is less
 
 
 
