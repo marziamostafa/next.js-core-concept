@@ -765,6 +765,23 @@ that redirect function must be from the next/navigation
 
 this function only works on server conponent ( as we can see "use client" is not used here)
 
+## redirect in next.config.js
+
+The redirects option in the next.config.js file allows you to redirect an incoming request path to a different destination path. This is useful when you change the URL structure of pages or have a list of redirects that are known ahead of time.
+
+----> suppose when i click on the add products , the request will take me to the home route page
+
+![alt text](image-95.png)
+
+---> the way to redirect from the next.config.js is given in the nextJS documentation
+
+![alt text](image-96.png)
+
+--> the way we added it
+
+![alt text](image-97.png)
+
+--> as there is no '/dashboard/products/add' page/route. it will redirect us to the 404 error page
 
 
 
