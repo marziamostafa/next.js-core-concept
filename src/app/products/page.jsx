@@ -11,9 +11,9 @@ export default async function ProductPage() {
 
     console.log(data)
 
-    if (data.length > 5) {
-        redirect("/")
-    }
+    // if (data.length > 5) {
+    //     redirect("/")
+    // }
 
 
     return (

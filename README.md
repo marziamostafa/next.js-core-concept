@@ -784,6 +784,19 @@ The redirects option in the next.config.js file allows you to redirect an incomi
 --> as there is no '/dashboard/products/add' page/route. it will redirect us to the 404 error page
 
 
+## env variable
+
+--> the variables we have declared in the .env.local file, they are only available in the server components
+
+--> if we want to make any variable globally available both in server and client component we have to use the prefix: NEXT_PUBLIC_
+
+![alt text](image-98.png)
+
+--> now this variable can be used both in server and client component
+
+
+
+
 
 # an error accured due to middleware file while checking api in postman
 ## middleware section as backup:
