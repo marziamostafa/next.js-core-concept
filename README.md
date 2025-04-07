@@ -748,6 +748,22 @@ that means we are giving command to erase the old saved data and fetch the data 
 that means, when we do the GET route to fetch the data its getting from the cache. but when we adding a new data by POST route it's fetching the data newly from the server
 
 
+## redirect
+
+after adding data by the POST route redirect to the list page where data gets fetched
+
+![alt text](image-93.png)
+
+## conditional redirect
+
+suppose if the length of the fetched data is more than 5 (fetched by GET route), it will be redirected to the home page
+
+that redirect function must be from the next/navigation
+
+
+![alt text](image-94.png)
+
+this function only works on server conponent ( as we can see "use client" is not used here)
 
 
 
