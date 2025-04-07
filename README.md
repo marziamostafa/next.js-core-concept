@@ -795,6 +795,11 @@ The redirects option in the next.config.js file allows you to redirect an incomi
 --> now this variable can be used both in server and client component
 
 
+## build project
+--> npm run build
+
+--> if there is any error in our code we can figure it out in the build page
+
 
 
 
