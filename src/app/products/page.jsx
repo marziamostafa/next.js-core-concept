@@ -3,6 +3,8 @@
 import { redirect } from 'next/navigation'
 import React from 'react'
 
+// export const dynamic= "force-dynamic" // this is used to make the page dynamic and not cached. It will be reloaded every time we visit the page
+
 export default async function ProductPage() {
     const res = await fetch("http://localhost:3000/api/items", {
         cache: "force-cache"

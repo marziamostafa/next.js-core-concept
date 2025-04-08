@@ -800,7 +800,21 @@ The redirects option in the next.config.js file allows you to redirect an incomi
 
 --> if there is any error in our code we can figure it out in the build page
 
+## build error i faced here
 
+![alt text](image-99.png)
+
+when i used the export keyword here. i had to made it local function
+
+--> if there is any error (though I haven't faced this one) like this from the products due to 
+
+cache: "force-cache"
+
+![alt text](image-100.png)
+
+--> we can solve it in the following way
+
+![alt text](image-101.png)
 
 
 # an error accured due to middleware file while checking api in postman

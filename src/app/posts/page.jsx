@@ -3,7 +3,7 @@ import Link from 'next/link'
 import style from "./post.module.css"
 
 import React from 'react'
-export const getPosts = async () => {
+const getPosts = async () => {
     const res = await fetch("https://jsonplaceholder.typicode.com/posts")
     const data = await res.json()
     return data

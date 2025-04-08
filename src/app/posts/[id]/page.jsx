@@ -7,20 +7,20 @@ export const getSinglePost = async (post_id) => {
 
 
 // --------dynamic title function----------
-export async function generateMetadata({ params}) {
+export async function generateMetadata({ params }) {
     // read route params
     const { id } = await params
-   
+
     // fetch data
     const singlePost = await getSinglePost(id)
-   
-   
-   
+
+
+
     return {
-      title: singlePost.title,
-      description:singlePost.body
+        title: singlePost.title,
+        description: singlePost.body
     }
-  }
+}
 
 
 export default async function SinglePost({ params }) {
