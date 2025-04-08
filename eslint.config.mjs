@@ -2,13 +2,17 @@ import { dirname } from "path";
 import { fileURLToPath } from "url";
 import { FlatCompat } from "@eslint/eslintrc";
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
+
+const { dirname } = require("path");
+const { FlatCompat } = require("@eslint/eslintrc");
+
+const __dirname = dirname(__filename); // Use __dirname directly in CommonJS
 
 const compat = new FlatCompat({
   baseDirectory: __dirname,
 });
 
-const eslintConfig = [...compat.extends("next/core-web-vitals")];
-
-export default eslintConfig;
+module.exports = {
+  extends: ["next/core-web-vitals"],
+  ...compat.config(),
+};

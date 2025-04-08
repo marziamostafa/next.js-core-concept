@@ -804,7 +804,9 @@ The redirects option in the next.config.js file allows you to redirect an incomi
 
 ![alt text](image-99.png)
 
-when i used the export keyword here. i had to made it local function
+![alt text](image-102.png)
+
+when i used the export keyword here i faced the error while doing build . i had to made it local function by removing 'export'
 
 --> if there is any error (though I haven't faced this one) like this from the products due to 
 
@@ -815,6 +817,26 @@ cache: "force-cache"
 --> we can solve it in the following way
 
 ![alt text](image-101.png)
+
+
+## npm start
+
+--> now we will start this command 'npm start' to run the code that we had made ready by 'npm run build'
+
+
+## Deploy
+
+vercel --prod
+
+setup and deploy? Y
+
+Link to existing Project? n
+
+want to modify these settings? N
+
+
+
+
 
 
 # an error accured due to middleware file while checking api in postman

@@ -11,7 +11,7 @@ export default async function ProductPage() {
     })
     const { data } = await res.json()
 
-    console.log(data)
+    // console.log(data)
 
     // if (data.length > 5) {
     //     redirect("/")

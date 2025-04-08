@@ -16,7 +16,7 @@ const fetchSingleMeals = async (id) => {
 export async function generateMetadata({ params }) {
   // read route params
   const { id } = (await params).id;
-  console.log(params);
+  // console.log(params);
 
   // fetch data
   const [singleMeal] = await fetchSingleMeals(params.id);
@@ -29,10 +29,10 @@ export async function generateMetadata({ params }) {
 
 export default async function singleMealPage({ params }) {
   const p = await params;
-  console.log(p.id);
+  // console.log(p.id);
 
   const meals = await fetchSingleMeals(p?.id);
-  console.log(meals);
+  // console.log(meals);
   return (
     <div>
       <div className="grid grid-cols-3 gap-4">
